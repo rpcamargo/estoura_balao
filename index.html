@@ -9,7 +9,27 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="iniciar()">
-    
+<body  onload="placar()">
+    <div class="container">
+        <header>
+            <section class="player">
+                <label>
+                    Player: 
+                    <input type="text" id="player">
+                </label>
+            </section>
+
+            <section class="controls">
+                <button onclick="inicio(this.value)" value="iniciar">Jogar</button>
+                <button onclick="inicio(this.value)" value="parar">Parar</button>
+            </section>
+
+            <section class="information">
+                    <div class="quantidade" id="estourados"></div>
+                  
+                    <div class="quantidade" id="total"></div>
+            </section>
+        </header>
+    </div>
 </body>
 </html>
